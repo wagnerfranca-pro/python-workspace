@@ -94,6 +94,30 @@ for alien in aliens [:5]:
 	print(alien)
 print("...")
 print(str(len(aliens)))
+print()
 
 ###############
 
+pizza = { 
+	'crust': 'thick',
+	'toppings': ['mushrooms', 'extra cheese'],
+}
+
+print(pizza['crust'] + "-crust pizza and toopings:")
+
+for topping in pizza['toppings']:
+	print("\t" + topping)
+print()
+
+favorite_languages = {
+	'jen': ['python', 'ruby'],
+	'sarah': ['c'],
+	'edward': ['ruby', 'go'],
+	'phil': ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages.items():
+	print(name.title())
+	for language in languages:
+		print("\t" + language.title())
+print()
